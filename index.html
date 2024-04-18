@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login Challenge</h2>
+        <div id="loginForm">
+            <form id="loginForm" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" autocomplete="off" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="flag" style="display: none;">
+            <h3>Flag</h3>
+            <p>Congratulations! You have successfully accessed the flag.</p>
+            <p>Flag: <span id="flagText">...</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
